@@ -30,3 +30,7 @@ python3 convert.py
 ```
 gunicorn -w 3 --threads 2 --bind 0.0.0.0:54321 convert:app --access-logfile "./access-$(date +\%Y-\%m-\%d-\%H-\%M).log" --error-logfile "./error-$(date +\%Y-\%m-\%d-\%H-\%M).log"
 ```
+
+## 使用方法
+
+将`BASE_URL`更换成`http://<ip>:<port|54321>/<服务提供商缩写>`，其中`服务提供商缩写`暂时只支持`ohmygpt`
